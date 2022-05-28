@@ -36,6 +36,7 @@ linter:
     - avoid_equals_and_hash_code_on_mutable_classes
     # DISABLE - avoid_escaping_inner_quotes
     - avoid_field_initializers_in_const_classes
+    - avoid_final_parameters
     # - avoid_function_literals_in_foreach_calls        # dart-lang recommended
     - avoid_implementing_value_types
     # - avoid_init_to_null                              # dart-lang recommended
@@ -72,10 +73,11 @@ linter:
     - cast_nullable_to_non_nullable
     - close_sinks
     - comment_references
+    - conditional_uri_does_not_exist
     # - constant_identifier_names                       # dart-lang recommended
     # - control_flow_in_finally                         # dart-lang recommended
     # - curly_braces_in_flow_control_structures         # dart-lang core
-    - depend_on_referenced_packages
+    # - depend_on_referenced_packages                   # dart-lang core
     - deprecated_consistency
     # DISABLE - diagnostic_describe_all_properties
     - directives_ordering
@@ -95,7 +97,7 @@ linter:
     - leading_newlines_in_multiline_strings
     # - library_names                                   # dart-lang recommended
     # - library_prefixes                                # dart-lang recommended
-    # DISABLE - library_private_types_in_public_api
+    # - library_private_types_in_public_api             # dart-lang recommended
     # DISABLE - lines_longer_than_80_chars
     # - list_remove_unrelated_type                      # dart-lang core
     - literal_only_boolean_expressions
@@ -104,10 +106,12 @@ linter:
     # EXPERIMENTAL - no_default_cases
     # - no_duplicate_case_values                        # dart-lang core
     # - no_logic_in_create_state                        # flutter-lints
+    # - no_leading_underscores_for_library_prefixes     # dart-lang recommended
+    # - no_leading_underscores_for_local_identifiers    # dart-lang recommended
     - no_runtimeType_toString
     # - non_constant_identifier_names                   # dart-lang core
     - noop_primitive_operations
-    - null_check_on_nullable_type_parameter
+    # - null_check_on_nullable_type_parameter           # dart-lang core
     # - null_closures                                   # dart-lang recommended
     - omit_local_variable_types
     # DISABLE - one_member_abstracts
@@ -144,7 +148,7 @@ linter:
     # - prefer_initializing_formals                     # dart-lang recommended
     # - prefer_inlined_adds                             # dart-lang recommended
     # DISABLE - prefer_int_literals
-    - prefer_interpolation_to_compose_strings
+    # - prefer_interpolation_to_compose_strings         # dart-lang recommended
     # - prefer_is_empty                                 # dart-lang core
     # - prefer_is_not_empty                             # dart-lang core
     # - prefer_is_not_operator                          # dart-lang recommended
@@ -161,10 +165,12 @@ linter:
     # DISABLE - public_member_api_docs
     # - recursive_getters                               # dart-lang recommended
     # DISABLE - require_trailing_commas
+    - secure_pubspec_urls
     # - sized_box_for_whitespace                        # flutter-lints
+    - sized_box_shrink_expand
     # - slash_for_doc_comments                          # dart-lang recommended
-    # DISABLE - sort_child_properties_last
-    # DISABLE - sort_constructors_first
+    # - sort_child_properties_last                      # flutter-lints
+    - sort_constructors_first
     - sort_pub_dependencies
     - sort_unnamed_constructors_first
     - test_types_in_equals
@@ -176,15 +182,16 @@ linter:
     - unnecessary_await_in_return
     # - unnecessary_brace_in_string_interps             # dart-lang recommended
     # - unnecessary_const                               # dart-lang recommended
-    # UNRECOGNIZED - unnecessary_constructor_name
+    # - unnecessary_constructor_name                    # dart-lang recommended
     # DISABLE - unnecessary_final
     # - unnecessary_getters_setters                     # dart-lang recommended
     - unnecessary_lambdas
+    # - unnecessary_late                                # dart-lang recommended
     # - unnecessary_new                                 # dart-lang recommended
-    - unnecessary_null_aware_assignments
-    # EXPERIMENTAL - unnecessary_null_checks
+    # - unnecessary_null_aware_assignments              # dart-lang recommended
+    - unnecessary_null_checks
     # - unnecessary_null_in_if_null_operators           # dart-lang recommended
-    - unnecessary_nullable_for_final_variable_declarations
+    # - unnecessary_nullable_for_final_variable_declarations # dart-lang recommended
     # - unnecessary_overrides                           # dart-lang core
     # DISABLE - unnecessary_parenthesis
     # DISABLE - unnecessary_raw_strings
@@ -194,19 +201,23 @@ linter:
     # - unnecessary_this                                # dart-lang recommended
     # - unrelated_type_equality_checks                  # dart-lang core
     - unsafe_html
-    - use_build_context_synchronously
+    # - use_build_context_synchronously                 # flutter-lints
+    - use_colored_box
+    - use_decorated_box
+    - use_enums
     # - use_full_hex_values_for_flutter_colors          # flutter-lints
     # - use_function_type_syntax_for_parameters         # dart-lang recommended
     # DISABLE - use_if_null_to_convert_nulls_to_bools
     - use_is_even_rather_than_modulo
     # - use_key_in_widget_constructors                  # flutter-lints
-    # EXPERIMENTAL - use_late_for_private_fields_and_variables
+    - use_late_for_private_fields_and_variables
     - use_named_constants
     - use_raw_strings
     # - use_rethrow_when_possible                       # dart-lang recommended
     - use_setters_to_change_properties
     - use_string_buffers
-    - use_test_throws_matchers
+    - use_super_parameters
+    # DISABLE - use_test_throws_matchers
     - use_to_and_as_if_applicable
     # - valid_regexps                                   # dart-lang core
     # - void_checks                                     # dart-lang core

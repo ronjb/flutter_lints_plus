@@ -1,5 +1,30 @@
 # CHANGELOG
 
+## 2.0.0 - May 28, 2022
+
+* Bumped the minimum required Dart SDK version to 2.17
+* Added the following lints:
+  * avoid_final_parameters
+  * conditional_uri_does_not_exist
+  * secure_pubspec_urls
+  * sized_box_shrink_expand
+  * sort_constructors_first
+  * use_late_for_private_fields_and_variables
+  * use_super_parameters
+* Updated `package:flutter_lints` dependency to version 2.0.1, which added the following lints:
+  * depend_on_referenced_packages
+  * library_private_types_in_public_api
+  * no_leading_underscores_for_library_prefixes
+  * no_leading_underscores_for_local_identifiers
+  * null_check_on_nullable_type_parameter
+  * prefer_interpolation_to_compose_strings
+  * sort_child_properties_last
+  * unnecessary_constructor_name
+  * unnecessary_late
+  * unnecessary_null_aware_assignments
+  * unnecessary_nullable_for_final_variable_declarations
+  * use_build_context_synchronously
+
 ## 1.0.1
 
 * Updated to include:
