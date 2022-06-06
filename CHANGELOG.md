@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 2.0.1 - June 6, 2022
+
+* In the analyzer section, switched from using `implicit-casts: false` and `implicit-dynamic: false` to using `strict-casts: true`, `strict-inference: true`, and `strict-raw-types: true`.
+* Removed `close_sinks: ignore` from the analyzer error section.
+
 ## 2.0.0 - May 28, 2022
 
 * Bumped the minimum required Dart SDK version to 2.17
