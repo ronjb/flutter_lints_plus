@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.1.0 - March 17, 2023
+
+* Updated with latest lints from https://dart-lang.github.io/linter/lints/options/options.html
+
 ## 2.0.1 - June 6, 2022
 
 * In the analyzer section, switched from using `implicit-casts: false` and `implicit-dynamic: false` to using `strict-casts: true`, `strict-inference: true`, and `strict-raw-types: true`.
