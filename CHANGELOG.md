@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 3.0.0 - May 30, 2023
+
+* Updated to require Dart 3 and added the following new lints:
+  * deprecated_member_use_from_same_package
+  * implicit_reopen
+  * invalid_case_patterns
+  * matching_super_parameters
+  * no_literal_bool_comparisons
+  * no_self_assignments
+  * type_literal_in_constant_pattern
+
 ## 2.1.0 - March 17, 2023
 
 * Updated with latest lints from https://dart-lang.github.io/linter/lints/options/options.html
