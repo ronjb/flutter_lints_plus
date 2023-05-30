@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 3.0.1 - May 30, 2023
+
+* Removed `no_self_assignments`. It is currently not a recognized linter rule.
+
 ## 3.0.0 - May 30, 2023
 
 * Updated to require Dart 3 and added the following new lints:
