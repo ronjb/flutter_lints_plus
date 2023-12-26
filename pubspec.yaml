@@ -2,10 +2,13 @@ name: flutter_lints_plus
 description: Recommended lints for Flutter apps, packages, and plugins to encourage good coding practices.
 repository: https://github.com/ronjb/flutter_lints_plus
 homepage: https://github.com/ronjb/flutter_lints_plus
-version: 3.0.1
+version: 3.1.0
 
 environment:
-  sdk: '>=3.0.0 <4.0.0'
+  sdk: ^3.0.0
 
 dependencies:
-  flutter_lints: ^2.0.1
+  flutter_lints: ^3.0.1
+
+topics:
+  - lints

@@ -1,5 +1,24 @@
 # CHANGELOG
 
+## 3.1.0 - December 26, 2023
+
+* Updated `package:flutter_lints` dependency to version 3.0.1
+  * collection_methods_unrelated_type was added to dart-lang core
+  * dangling_library_doc_comments was added to dart-lang core
+  * implicit_call_tearoffs was added to dart-lang core
+  * iterable_contains_unrelated_type was removed from dart-lang core
+  * list_remove_unrelated_type was removed from dart-lang core
+  * prefer_equal_for_default_values was removed from dart-lang core
+  * prefer_void_to_null was removed from dart-lang recommended
+  * secure_pubspec_urls was added to dart-lang core
+  * type_literal_in_constant_pattern was added to dart-lang core
+  * unnecessary_to_list_in_spreads was added to dart-lang recommended
+  * use_string_in_part_of_directives was added to dart-lang core
+  * use_super_parameters was added to dart-lang recommended
+* Updated with latest lints from https://dart.dev/tools/linter-rules/all
+  * annotate_redeclares was added
+  * no_self_assignments was added
+
 ## 3.0.1 - May 30, 2023
 
 * Removed `no_self_assignments`. It is currently not a recognized linter rule.
