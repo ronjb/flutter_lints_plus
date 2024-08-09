@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## 3.2.0 - August 9, 2024
+
+* Updated `package:flutter_lints` dependency to version 4.0.0
+  * library_annotations was added to dart-lang core
+  * no_wildcard_variable_uses was added to dart-lang core
+  * package_prefixed_library_names was removed from dart-lang core
+  * unnecessary_library_name was added to dart-lang recommended
+  
+* Updated with latest lints from https://dart.dev/tools/linter-rules/all
+  * document_ignores was added
+  * missing_code_block_language_in_doc_comment was added
+  * unintended_html_in_doc_comment was added
+
 ## 3.1.0 - December 26, 2023
 
 * Updated `package:flutter_lints` dependency to version 3.0.1
