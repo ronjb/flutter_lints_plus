@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## 3.3.0 - May 21, 2025
+
+* Updated to depend on `lints: ^6.0.0` instead of `flutter_lints: ^5.0.0` (the latest version) because flutter_lints depends on the older `lints: ^5.0.0`.
+
+* Updated with new lints from https://dart.dev/tools/linter-rules/all
+  * avoid_futureor_void, unnecessary_async, unnecessary_ignore, use_null_aware_elements, use_truncating_division
+
+* Other changes:
+  * avoid_null_checks_in_equality_operators was deprecated
+  * invalid_runtime_check_with_js_interop_types was added to dart recommended
+  * package_api_docs was removed from lints
+  * strict_top_level_inference was added to dart core
+  * unintended_html_in_doc_comment was added to dart core
+  * unnecessary_underscores was added to dart recommended
+
 ## 3.2.0 - August 9, 2024
 
 * Updated `package:flutter_lints` dependency to version 4.0.0
